@@ -21,15 +21,15 @@ function getMealList(){
         if(data.meals){
             data.meals.forEach(meal => {
                 html += `
-                    <div class = "meal-item" data-id = "${meal.idMeal}">
-                        <div class = "meal-img">
+                    <section class = "meal-item" data-id = "${meal.idMeal}">
+                        <section class = "meal-img">
                             <img src = "${meal.strMealThumb}" alt = "food">
-                        </div>
-                        <div class = "meal-name">
+                        </section>
+                        <section class = "meal-name">
                             <h3>${meal.strMeal}</h3>
                             <a href = "#" class = "recipe-btn">Get Recipe</a>
-                        </div>
-                    </div>
+                        </section>
+                    </section>
                 `;
             });
             mealList.classList.remove('notFound');
@@ -61,16 +61,16 @@ function mealRecipeModal(meal){
     let html = `
         <h2 class = "recipe-title">${meal.strMeal}</h2>
         <p class = "recipe-category">${meal.strCategory}</p>
-        <div class = "recipe-instruct">
+        <section class = "recipe-instruct">
             <h3>Instructions:</h3>
             <p>${meal.strInstructions}</p>
-        </div>
-        <div class = "recipe-meal-img">
+        </section>
+        <section class = "recipe-meal-img">
             <img src = "${meal.strMealThumb}" alt = "">
-        </div>
-        <div class = "recipe-link">
+        </section>
+        <section class = "recipe-link">
             <a href = "${meal.strYoutube}" target = "_blank">Watch Video</a>
-        </div>
+        </section>
     `;
     mealDetailsContent.innerHTML = html;
     mealDetailsContent.parentElement.classList.add('showRecipe');
