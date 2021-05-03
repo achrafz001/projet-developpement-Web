@@ -12,8 +12,12 @@ body{
     font-size: 1.05rem;
     line-height: 1.6;
     font-family: 'Poppins', sans-serif;
+    background-image:url('https://www.kronos.com/sites/default/files/images/industry/icons/15-kron-1566-kronosicons-dining-bw-v02.01-noloop.gif');
+    background-position: center;
+    background-size: cover;
+    height:50%;
+    width:100%;
 }
-
 
 .btn{
     font-family: inherit;
@@ -29,7 +33,6 @@ body{
     margin-bottom: 1rem;
 }
 
-
 .container{
     min-height: 100vh;
 }
@@ -37,7 +40,7 @@ body{
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
-    background: #fff;
+    background:transparent;
     text-align: center;
 }
 .meal-search{
@@ -72,8 +75,8 @@ body{
     width: 55px;
     height: 55px;
     font-size: 1.8rem;
-    background: var(--tenne-tawny);
-    color: #fff;
+    background: none;
+    color: var(--tenne-tawny);
     border: none;
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
@@ -173,7 +176,7 @@ body{
 }
 
 
-/* js file related */
+/* js related */
 .showRecipe{
     display: block;
 }
